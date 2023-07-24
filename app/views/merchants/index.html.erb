@@ -1,0 +1,5 @@
+<h1>Merchants</h1>
+
+<% @facade.merchants.each do |merchant| %>
+  <p><%= link_to merchant.name, merchant_path(merchant.id)  %></p>
+<% end %>
